@@ -30,12 +30,12 @@ function show(val) {
     } else if (val == "alipay") {
         $("#alipay-name").css({ display: "inline-block" });
         var imgSrc = urls.alipay;
-        var img = $('<img>').attr('src', imgSrc).css({margin: "auto"});
+        var img = $('<img>').attr('src', imgSrc).css({margin: "auto", "max-width": "240px"});
         $("#qrcode").html(img);
     } else if (val == "wechat") {
         $("#wechat-name").css({ display: "inline-block" });
         var imgSrc = urls.wechat;
-        var img = $('<img>').attr('src', imgSrc).css({margin: "auto"});
+        var img = $('<img>').attr('src', imgSrc).css({margin: "auto", "max-width": "240px"});
         $("#qrcode").html(img);
     }
     
